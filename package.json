@@ -1,0 +1,23 @@
+{
+  "name": "debug",
+  "description": "",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">= 20.x"
+  },
+  "dependencies": {
+    "marko": "^5.36.1"
+  },
+  "devDependencies": {
+    "@marko/run": "^0.5.4",
+    "vite": "^6.0.1"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production marko-run build",
+    "dev": "marko-run dev",
+    "preview": "marko-run preview",
+    "start": "NODE_ENV=production node dist/index.mjs"
+  },
+  "type": "module"
+}
