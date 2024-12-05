@@ -7,15 +7,18 @@
     "node": ">= 20.x"
   },
   "dependencies": {
-    "marko": "^5.36.1"
+    "@marko/run-adapter-node": "^0.1.13",
+    "express": "^5.0.1",
+    "marko": "^5.36.2"
   },
   "devDependencies": {
-    "@marko/run": "^0.5.4",
-    "vite": "^6.0.1"
+    "@marko/run": "0.4.12",
+    "vite": "^6.0.2"
   },
   "scripts": {
     "build": "NODE_ENV=production marko-run build",
     "dev": "marko-run dev",
+    "dev:express": "marko-run dev src/index.ts",
     "preview": "marko-run preview",
     "start": "NODE_ENV=production node dist/index.mjs"
   },
